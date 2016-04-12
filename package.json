@@ -7,8 +7,10 @@
     "nodemon": "nodemon lib/express/server.js",
     "transpile-server-files": "babel src/express -d lib/express --watch",
     "livereload": "node livereload.js",
+    "make-js": "watchify -v -t babelify src/js/scripts.js -o assets/bundle.js",
     "stylus": "stylus src/stylus/styles.styl -u autoprefixer-stylus -o assets/ -w",
-    "dev": "parallelshell 'npm run transpile-server-files' 'npm run nodemon' 'npm run livereload' 'npm run stylus'"
+    "dev": "parallelshell 'npm run transpile-server-files' 'npm run nodemon' 'npm run livereload' 'npm run stylus' 'npm run make-js'"
+
   },
   "author": "",
   "license": "ISC",
