@@ -1,5 +1,5 @@
 {
-  "name": "pos",
+  "name": "Unscalable",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,8 +11,8 @@
     "stylus": "stylus src/stylus/styles.styl -u autoprefixer-stylus -o assets/ -w",
     "dev": "parallelshell 'npm run transpile-server-files' 'npm run nodemon' 'npm run livereload' 'npm run stylus' 'npm run make-js'"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Dan Liu",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.13.4",
     "jade": "^1.11.0",
