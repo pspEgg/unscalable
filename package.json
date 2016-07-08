@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "nodemon": "nodemon lib/express/server.js --watch src/express",
-    "transpile-server-files": "babel src/express -d lib/express --watch",
+    "transpile-server-files": "babel src -d lib --watch",
     "livereload": "node livereload.js",
     "make-js": "watchify -v -t babelify src/js/scripts.js -o assets/bundle.js",
     "stylus": "stylus src/stylus/styles.styl -u autoprefixer-stylus -o assets/ -w",
