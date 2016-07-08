@@ -9,7 +9,6 @@ html(lang="en-us")
     meta(property="og:type" content="website")
     meta(property="og:url" content="http://bierha.us")
     meta(property="og:image" content="http://bierha.us/wide.jpg")
-    script(src="/bundle.js")
     if devMode
       link(rel="stylesheet" href="/styles.css")
     //- if !devMode
@@ -20,6 +19,7 @@ html(lang="en-us")
     .wrapper
       block content
       
+    script(src="/bundle.js")
     if devMode
       script(type="text/javascript").
         document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
