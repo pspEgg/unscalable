@@ -26,4 +26,4 @@ app.use(express.static(path.join(__dirname, '../../assets')))
 
 app.get('/', (req, res) => res.render('home'))
 
-app.listen(4000)
+app.listen(process.env.PORT || 4000)
