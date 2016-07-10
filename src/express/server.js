@@ -12,7 +12,7 @@ app.locals.devMode = true
 
 // load css, js & images
 app.use(express.static(path.join(__dirname, '../../assets')))
-
+app.use(express.static(path.join(__dirname, '../../notes')))
 // Test React Server
 // import React from 'react'
 // import ReactDOM from 'react-dom'
@@ -26,4 +26,4 @@ app.use(express.static(path.join(__dirname, '../../assets')))
 
 app.get('/', (req, res) => res.render('home'))
 
-app.listen(process.env.PORT || 4000)
+app.listen(process.env.PORT || 4001)

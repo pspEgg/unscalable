@@ -14,10 +14,13 @@ html(lang="en-us")
     //- if !devMode
     //-   style
     //-     include ../../build/css/master.css
-    //- include _typekit_snippet
+    include _typekit.html
   body
     .wrapper
       block content
+      
+      include footer
+        
       
     script(src="/bundle.js")
     if devMode

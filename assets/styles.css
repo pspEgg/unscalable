@@ -95,6 +95,166 @@ a img {
   border: none;
 }
 body {
-  font-family: sans-serif;
+  color: #333;
+  background: #f1f2f3;
+  font-family: "brandon-grotesque", sans-serif;
   font-size: 29px;
+}
+a {
+  color: #268bd2;
+}
+img {
+  width: 100%;
+}
+hr.clear {
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+  clear: both;
+}
+.footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+  padding-bottom: 4em;
+}
+.home p,
+.home li {
+  line-height: 1.5em;
+}
+.home p,
+.home ul,
+.home ol {
+  margin: 0.8em 0.8em;
+}
+.home li {
+  list-style: disc;
+}
+.home ul {
+  padding-left: 1em;
+}
+.home .header {
+  font-weight: 600;
+  padding: 1.3em 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+}
+.home .header h1 {
+  line-height: 1.3em;
+  text-align: center;
+  font-size: 8vw;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.home .pitch {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home .workshop-button {
+  display: block;
+  font-size: 0.9em;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 5.9em;
+  height: 5.9em;
+  line-height: 1.3em;
+  text-align: center;
+  background: #268bd2;
+  text-decoration: none;
+  color: #f1f2f3;
+  border-radius: 50%;
+  margin: 0 0.5em;
+}
+.home .workshop-button .text {
+  width: 5.5em;
+  margin: auto;
+}
+.home .tagline {
+  padding: 0 0.1em;
+}
+.home .cover {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em 0;
+}
+.home .cover .method {
+  color: #f1f2f3;
+  font-size: 3.5vw;
+  -webkit-transform: rotate(-66.3deg);
+          transform: rotate(-66.3deg);
+  font-weight: 600;
+  position: absolute;
+  top: 1.5em;
+  left: -0.75em;
+  z-index: 100;
+  text-align: center;
+  line-height: 1.2em;
+}
+.home .cover div {
+  position: relative;
+  width: 50%;
+}
+.home .cover img {
+  width: 100%;
+}
+.home .cover .hero-bts-wrapper {
+  background: #2aa198;
+}
+.home .cover .hero-bts {
+  -webkit-clip-path: polygon(45% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(45% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.home .case-study {
+  padding: 1em 0;
+}
+.home .case-study h2 {
+  margin-right: 1em;
+  text-align: right;
+}
+.home .case-study h3 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.domingos-case h3 {
+  font-size: 11.5vw;
+}
+.domingos-case p {
+  font-size: 5.5vw;
+  margin: 0 0.2em;
+}
+.domingos-case p::first-letter {
+  font-size: 2em;
+  margin-right: -0.1em;
+  font-weight: 600;
+}
+.domingos-case .dom-customer {
+  -webkit-clip-path: polygon(0 0, 27% 0%, 36% 16%, 38% 31%, 56% 49%, 100% 44%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 27% 0%, 36% 16%, 38% 31%, 56% 49%, 100% 44%, 100% 100%, 0 100%);
+  -webkit-shape-outside: polygon(0 0, 27% 0%, 36% 16%, 38% 31%, 56% 49%, 100% 44%, 100% 100%, 0 100%);
+          shape-outside: polygon(0 0, 27% 0%, 36% 16%, 38% 31%, 56% 49%, 100% 44%, 100% 100%, 0 100%);
+  display: inline;
+  float: left;
+  width: 100%;
+}
+.workshop-content h2 {
+  text-align: center;
+  font-size: 6vw;
+  margin: 1em 0;
 }

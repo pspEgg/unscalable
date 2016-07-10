@@ -1,0 +1,103 @@
+.home
+  p, li
+    line-height: 1.5em
+  p, ul, ol
+    margin 0.8em 0.8em
+  li
+    list-style: disc;
+  ul
+    padding-left: 1em
+  .header
+    font-weight: 600
+
+    padding 1.3em 0
+    align-items: center;
+    // padding 1em 0.3em
+    h1
+      line-height: 1.3em
+      text-align: center;
+      font-size: 8 vw
+      flex 1
+  .pitch
+    display: flex
+    align-items: center;
+  .workshop-button
+    display: block;
+    font-size: 0.9em
+    transform: rotate(15deg);
+    display: flex;
+    min-width: 5.9em
+    height: 5.9em
+    line-height: 1.3em
+    text-align: center;
+    background: $clickable
+    text-decoration: none
+    color $white
+    border-radius: 50%
+    margin 0 0.5em
+    .text
+      width: 5.5em
+      margin auto
+
+  .tagline
+    padding 0 0.1em
+
+    // text-align: center;
+
+  .cover
+    display: flex
+    padding 1em 0
+    .method
+      color $white
+      font-size: 3.5vw
+      transform: rotate(-66.3deg);
+      font-weight: 600
+      position: absolute;
+      top 1.5em
+      left -0.75em
+      z-index: 100
+      text-align: center;
+      line-height: 1.2em
+    div
+      position: relative;
+      width: 50%
+    img
+      // display: block;
+      width: 100%
+    .hero-bts-wrapper
+      background: #2aa198
+    .hero-bts
+      clip-path: polygon(45% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+    //   border-radius: 50%
+
+  .case-study
+    padding 1em 0
+    h2
+      margin-right 1em
+      text-align: right;
+    h3
+      text-align: center;
+      margin-bottom 0.5em
+.domingos-case
+  h3
+    font-size: 11.5vw
+  p
+    font-size: 5.5vw
+    margin 0 0.2em
+    &::first-letter
+      font-size: 2em
+      margin-right: -0.1em
+      font-weight: 600
+  .dom-customer
+    clip-path: polygon(0 0, 27% 0%, 36% 16%, 38% 31%, 56% 49%, 100% 44%, 100% 100%, 0 100%);
+    shape-outside: polygon(0 0, 27% 0%, 36% 16%, 38% 31%, 56% 49%, 100% 44%, 100% 100%, 0 100%);
+    display: inline;
+    float: left
+    width: 100%
+
+.workshop-content
+  h2
+    text-align: center;
+    font-size: 6vw
+    margin 1em 0
