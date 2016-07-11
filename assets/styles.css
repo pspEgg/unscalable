@@ -112,6 +112,21 @@ hr.clear {
   visibility: hidden;
   clear: both;
 }
+input {
+  font: inherit;
+  background: none;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+}
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background: #f1f2f3;
+  border: none;
+  border: 1px solid #333;
+  border-radius: 5px;
+  line-height: 1.5em;
+}
 .footer {
   text-align: center;
   padding: 1em;
@@ -127,10 +142,10 @@ hr.clear {
 .home ol {
   margin: 0.8em 0.8em;
 }
-.home li {
+.home .pitch-secondary li {
   list-style: disc;
 }
-.home ul {
+.home .pitch-secondary ul {
   padding-left: 1em;
 }
 .home .header {
@@ -236,7 +251,7 @@ hr.clear {
   font-size: 11.5vw;
 }
 .domingos-case p {
-  font-size: 5.5vw;
+  font-size: 5.4vw;
   margin: 0 0.2em;
 }
 .domingos-case p::first-letter {
@@ -253,8 +268,98 @@ hr.clear {
   float: left;
   width: 100%;
 }
+.mentors {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.mentors .profile {
+  max-width: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mentors .avatar img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+.register {
+  clear: both;
+}
+.register h2 {
+  font-weight: 600;
+  text-align: center;
+}
+.register .header {
+  font-size: 13vw;
+  padding: 0.8em 0;
+}
+.register .workshop-cover {
+  background: no-repeat center url("http://res.cloudinary.com/dk0rh65wd/image/upload/v1468201406/worshop/dom-shop-bw.jpg");
+  height: 30%;
+}
+.register .workshop-cover .info {
+  display: inline-block;
+  color: #f1f2f3;
+  padding: 1em 1.5em;
+  background: rgba(31,31,31,0.9);
+  font-weight: 600;
+  text-align: center;
+}
+.register .workshop-cover .info li {
+  list-style: none;
+}
+.register .workshop-cover .info .time {
+  font-weight: 400;
+}
 .workshop-content h2 {
   text-align: center;
   font-size: 6vw;
   margin: 1em 0;
+}
+.workshop-content p {
+  clear: both;
+}
+.workshop-content .avatar {
+  float: left;
+  width: 28vw;
+  -webkit-shape-outside: circle();
+          shape-outside: circle();
+  margin-right: 0.8em;
+}
+.workshop-content .avatar img {
+  border-radius: 50%;
+}
+.workshop-content .text {
+  display: block;
+  padding-top: 10.7vw;
+}
+.workshop-content .text strong {
+  font-weight: 600;
+  font-size: 1.8em;
+}
+.workshop-content .activity:nth-of-type(2n) .avatar {
+  float: right;
+  margin-right: 0em;
+  margin-left: 0.8em;
+}
+.workshop-content .activity:nth-of-type(2n) .text {
+  text-align: right;
 }
